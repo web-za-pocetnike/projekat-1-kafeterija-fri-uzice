@@ -205,6 +205,28 @@ Animation
     opacity: 1;
   }
 }
+@keyframes mobileanimation {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+    /* border: dotted 3px var(--clr-primary);
+    border-radius: 0.5rem; */
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.9;
+
+    /* border: solid 5px var(--clr-primary);
+    border-radius: 1rem; */
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1;
+
+    /* border: dotted 5px var(--clr-primary);
+    border-radius: 1rem; */
+  }
+}
 /*
 =============== 
 Navbar
@@ -383,16 +405,20 @@ Skills
   cursor: pointer;
   background: var(--clr-grey-10);
 }
+
 .skill {
   padding: 2.5rem 0;
   text-align: center;
   transition: var(--transition);
   height: 18rem;
 }
+
 .skill-icon {
   font-size: 2.5rem;
   margin-bottom: 1.25rem;
   transition: var(--transition);
+  animation: mobileanimation 5s ease infinite;
+
   display: inline-block;
   color: var(--clr-primary);
 }
@@ -408,16 +434,27 @@ Skills
   max-width: 20rem;
   margin: 0 auto;
   padding: 0 1rem;
+  /* animation: mobileanimation 5s ease infinite; */
+}
+.skill-title {
+  animation: mobileanimation 5s ease infinite;
 }
 
 /* Fix za velicinu Div-a */
 .skill-2 {
+  animation: unset;
   margin-bottom: 23.5px;
 }
 /* End of Fix */
 .skill:hover {
   background: var(--clr-white);
-  box-shadow: 0 2px var(--clr-primary);
+  /* box-shadow: 0 2px var(--clr-primary); */
+  transform: scale(0.98);
+  transition: all 4s infinite;
+  border-top-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+  border-left: solid 8px var(--clr-primary);
+  border-right: solid 8px var(--clr-primary);
 }
 /* ubacena animacija sto je bila na hamburger meniju */
 .skill:hover .skill-icon {
@@ -429,12 +466,22 @@ Skills
     float: left;
     width: 50%;
   }
+  .skill-icon,
+  .skill-title {
+    animation: unset;
+  }
 }
 @media screen and (min-width: 1200px) {
   .skill {
     width: 25%;
+    animation: unset;
+  }
+  .skill-icon,
+  .skill-title {
+    animation: unset;
   }
 }
+
 /*
 =============== 
 About
