@@ -27,4 +27,8 @@ const navLink5 = document.querySelector(".navlink5");
 navLink5.addEventListener("click", () => {
  document.getElementById("checkbox").checked = false;
 })
+const navLink6 = document.querySelector(".navlink6");
+
+navLink6.addEventListener("click", () => {
+ document.getElementById("checkbox").checked = false;
 
