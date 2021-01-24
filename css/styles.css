@@ -246,6 +246,7 @@ Navbar
   color: var(--clr-white);
   transition: color 0.3s ease;
 }
+
 #menuToggle a:hover {
   color: var(--clr-primary);
 }
@@ -309,9 +310,11 @@ Navbar
   padding: 10px 0;
   font-size: 22px;
 }
+
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+
 .nav-link:hover {
   background: var(--clr-primary-light);
   color: var(--clr-primary);
@@ -510,6 +513,7 @@ About
 .about-text {
   max-width: 26rem;
   color: var(--clr-grey-5);
+  /* text-align: center; */
 }
 @media screen and (min-width: 992px) {
   .about-img,
@@ -517,8 +521,12 @@ About
     float: left;
     width: 50%;
   }
+  .about-img {
+    margin-top: 5rem;
+  }
   .about-info {
     padding-left: 2rem;
+    margin-top: -3rem;
   }
 }
 /*
@@ -765,7 +773,7 @@ Footer
   text-align: left;
 }
 .partners-logo {
-  width: 5rem;
+  width: 4.5rem;
   float: left;
   margin-right: 0.5rem;
   padding: 0.5rem;
@@ -781,7 +789,7 @@ Footer
   }
   .partners-logo {
     width: 8rem;
-    height: 6rem;
+    height: 7rem;
   }
   .contact-form {
     margin-top: -0.5rem;
