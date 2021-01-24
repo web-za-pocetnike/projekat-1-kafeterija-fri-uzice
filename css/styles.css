@@ -3,7 +3,9 @@
 FONTS 
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Marck+Script");
+@import url("https://fonts.googleapis.com/css?family=Balsamiq+Sans:400,700|Balsamiq+Sans");
+@import url("https://fonts.googleapis.com/css?family=Pacifico:400,700|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Forum:400,700|Forum");
 
 /* 
 ================
@@ -11,15 +13,15 @@ Variables
 ================
 */
 :root {
-  --clr-primary: #ebc012;
+  --clr-primary: #ba5624;
   --clr-primary-dark: #3a4d06;
   --clr-grey-1: #102a42;
   --clr-grey-5: #797676;
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
   --clr-black: black;
-  --ff-primary: "Catamaran", sans-serif;
-  --ff-secondary: "Marck Script", cursive;
+  --ff-primary: "Forum", sans-serif;
+  --ff-secondary: "Pacifico", cursive;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -51,7 +53,7 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
