@@ -496,6 +496,9 @@ About
 .about-info {
   padding: 2rem 0;
 }
+.about-text-bold {
+  font-weight: 700;
+}
 .about-picture-container {
   background: var(--clr-primary);
   border: 0.5rem solid var(--clr-primary);
@@ -522,7 +525,7 @@ About
     width: 50%;
   }
   .about-img {
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
   .about-info {
     padding-left: 2rem;
