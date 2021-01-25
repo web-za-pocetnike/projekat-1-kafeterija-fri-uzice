@@ -348,6 +348,13 @@ Header
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.hero-text-h2 {
+  font-size: 1.9rem;
+
+}
+.hero-text-h1
+{font-size: 2.1rem;}
+
 .banner h2 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
@@ -367,6 +374,14 @@ Header
   padding: 1rem 1.75rem;
   animation: show 5s linear 1;
 }
+@media screen and (min-width: 768px)
+{
+  .hero-text-h2 {
+  font-size: 3rem;
+}
+.hero-text-h1 {font-size: 4rem;}
+}
+
 /* content divider */
 .content-divider {
   height: 0.5rem;
@@ -570,7 +585,7 @@ Products
     width: 50%;
     padding-right: 2rem;
   }
-}
+  
 @media screen and (min-width: 992px) {
   .product {
     width: 33.33%;
