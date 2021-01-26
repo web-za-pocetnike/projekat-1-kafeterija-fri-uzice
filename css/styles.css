@@ -23,6 +23,7 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
+  scroll-behavior: smooth;
 }
 html {
   scroll-behavior: smooth;
@@ -309,8 +310,8 @@ Header
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/pexels-ave-calvar-martinez-4705120.jpg") center/cover
-      no-repeat fixed;
+    url("../images/48411486_599596733832678_5054373030680068096_o.jpg")
+      center/cover no-repeat fixed;
   position: relative;
   overflow-x: hidden;
 }
@@ -491,6 +492,10 @@ Products
 .product-title {
   text-align: center;
   padding-bottom: 0.875rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  /* font-family: var(--ff-secondary); */
 }
 .product {
   margin-bottom: 2rem;
@@ -504,18 +509,66 @@ Products
 .product-price {
   color: var(--clr-primary);
 }
+.product-info1 {
+  text-align: center;
+  font-family: var(--ff-primary);
+}
+.product-info-naslov {
+  font-weight: bold;
+}
+.product-info-text {
+  color: var(--clr-grey-5);
+}
+/* .img4 {
+  height: 13rem;
+} */
+.product:hover {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 @media screen and (min-width: 768px) {
   .product {
     float: left;
     width: 50%;
-    padding-right: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  .product-info {
+    height: 50rem;
+    margin-top: 0.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .product {
-    width: 33.33%;
+    float: left;
+    width: 50;
+  }
+  .product-img {
+    height: 16rem;
+    width: 18rem;
+  }
+  .product-info0 {
+    display: flex;
+    justify-content: center;
   }
 }
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .product {
+    float: left;
+    width: 50%;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .product-info {
+    height: 45rem;
+    margin-top: 0.5rem;
+  }
+  .product-img {
+    height: 25rem;
+  }
+} */
 @media screen and (min-width: 1200px) {
   /* .products-info {
     float: left;
@@ -525,10 +578,26 @@ Products
     float: left;
     width: 70%;
   } */
+  .product-info {
+    display: flex;
+    align-items: center;
+    height: 30rem;
+  }
+  .product-info1 {
+    margin: 0.5rem;
+    padding: 0.5rem 0;
+  }
+  .product-img {
+    width: 16rem;
+  }
+  .img4 {
+    width: 16rem;
+    height: 14rem;
+  }
   .product {
     float: left;
-    width: 33.33%;
-    margin-bottom: 0;
+    width: 50%;
+    margin-bottom: 2rem;
     padding: 0 1rem;
   }
   .products-title {
