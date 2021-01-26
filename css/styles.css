@@ -6,14 +6,14 @@ FONTS
 @import url("https://fonts.googleapis.com/css?family=Balsamiq+Sans:400,700|Balsamiq+Sans");
 @import url("https://fonts.googleapis.com/css?family=Pacifico:400,700|Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Forum:400,700|Forum");
-
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Nanum+Gothic");
 /* 
 ================
 Variables 
 ================
 */
 :root {
-  --clr-primary: #ba5624;
+  --clr-primary: #ca9a6d;
   --clr-primary-dark: #3a4d06;
   --clr-grey-1: #102a42;
   --clr-grey-5: #797676;
@@ -807,7 +807,7 @@ Footer
   }
   .partners-logo {
     width: 8rem;
-    height: 7rem;
+    height: 5.5rem;
   }
   .contact-form {
     margin-top: -0.5rem;
