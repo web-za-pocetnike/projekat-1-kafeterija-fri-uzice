@@ -13,7 +13,8 @@ Variables
 ================
 */
 :root {
-  --clr-primary: #ca9a6d;
+  --clr-menu-clr: #222222;
+  --clr-primary: rgb(202, 154, 109);
   --clr-primary-dark: #3a4d06;
   --clr-grey-1: #102a42;
   --clr-grey-5: #797676;
@@ -41,6 +42,8 @@ body {
   /* color: var(--clr-grey-10); */
   line-height: 1.5;
   font-size: 0.875;
+  width: 100%;
+  /* position: fixed; */
 }
 a {
   text-decoration: none;
@@ -136,6 +139,7 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
@@ -235,13 +239,34 @@ Animation
 Navbar
 ===============
 /*  hamburger menu */
+.fixer-menu {
+  position: fixed;
+  width: 100vw;
+  height: 5.4rem;
+  background: var(--clr-menu-clr);
+  opacity: 0.8;
+  z-index: 1;
+}
+.meni-logo-fix {
+  width: 4.5rem;
+  margin-top: 5px;
+  float: right;
+  z-index: 2;
+}
+.li-logo {
+  width: 10rem;
+}
 #menuToggle {
   display: block;
   position: fixed;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+
+  color: var(--clr-primary);
+  font-size: 1rem;
 }
+
 #menuToggle a {
   text-decoration: none;
   color: var(--clr-white);
@@ -275,6 +300,7 @@ Navbar
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
+
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
@@ -296,8 +322,9 @@ Navbar
 }
 /* otvoreni menu */
 #menu {
-  position: absolute;
-  width: 300px;
+  position: fixed;
+  height: 120vh;
+  width: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -322,10 +349,19 @@ Navbar
   padding-left: 1.5rem;
   border-left: 0.25rem solid var(--clr-primary);
 }
+
 @media screen and (min-width: 768px) {
+  #menu {
+    width: 300px;
+  }
   .navbar {
     width: 30vw;
     max-width: 20rem;
+  }
+}
+
+/* .lock-scroll {
+    position: unset;
   }
 }
 /* end of nav menu */
@@ -351,10 +387,10 @@ Header
 }
 .hero-text-h2 {
   font-size: 1.9rem;
-
 }
-.hero-text-h1
-{font-size: 2.1rem;}
+.hero-text-h1 {
+  font-size: 2.1rem;
+}
 
 .banner h2 {
   font-family: var(--ff-secondary);
@@ -375,12 +411,13 @@ Header
   padding: 1rem 1.75rem;
   animation: show 5s linear 1;
 }
-@media screen and (min-width: 768px)
-{
+@media screen and (min-width: 768px) {
   .hero-text-h2 {
-  font-size: 3rem;
-}
-.hero-text-h1 {font-size: 4rem;}
+    font-size: 3rem;
+  }
+  .hero-text-h1 {
+    font-size: 4rem;
+  }
 }
 
 /* content divider */
@@ -486,6 +523,9 @@ Skills
   .skill {
     float: left;
     width: 50%;
+  }
+  .skills {
+    padding: 0.5rem;
   }
   .skill-icon,
   .skill-title {
@@ -613,13 +653,9 @@ Products
     height: 50rem;
     margin-top: 0.5rem;
   }
-
 }
 
-
-  
 @media screen and (min-width: 992px) {
-
   .product {
     float: left;
     width: 50%;
